@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merry Christmas!</title>
+    <link
+      rel="shortcut icon"
+      href="https://e7.pngegg.com/pngimages/651/42/png-clipart-computer-icons-heart-favicon-love-symbols-love-color-pencil.png"
+      />
+    <meta
+      property="og:image"
+      content="https://pbs.twimg.com/media/FHYlzgcagAA98b_.jpg:large"
+    />
+    <meta property="og:title" content="♥" />
+    <meta property="og:description" content="Merry Christmas" />
+    <link rel="stylesheet" href="./style.css">
+  <style>
+    * {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 50px;
+      font-style: center;
+    }
+
+    @media screen and (max-width: 760px) {
+      .messagebox {
+        width: 300px;
+        padding: 20px;
+      }
+
+      .rtan {
+        width: 150px;
+        height: 150px;
+        margin: 70px auto 0px auto;
+      }
+
+      .envelope {
+        margin: 150px auto 0px auto;
+      }
+    }
+
+    .envelope-msg {
+      color: white;
+      text-align: center;
+      text-shadow: 2px 1px 4px rgb(255, 255, 218);
+      text-shadow: -1px 2px 4px rgb(255, 255, 207);
+      font-weight: bold;
+    }
+
+    .envelope {
+      width: 449px;
+      height: 290px;
+      background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG100757.png');
+      background-size: cover;
+      background-position: center;
+      margin: 0px auto 0px auto;
+      cursor: pointer;
+      box-shadow: 3px 0px 2px rgb(255, 255, 255);
+      box-shadow: 2px 5px 2px rgb(85, 85, 85);
+    }
+
+    .rtan {
+      background-color: white;
+      width: 250px;
+      height: 120px;
+      background-image: url("https://fancyodds.com/wp-content/uploads/2021/12/Merry-Christmas-Gif-Funny-With-Sound-Images-Best-Christmas-Gif-For-Facebook-Whatsapp-Free-Download-6.gif");
+      background-size: cover;
+      background-position: center;
+      border-radius: 100px;
+      margin: 100px auto 0px auto;
+      border: 5px solid white;
+      box-shadow: 0px 0px 10px 0px white;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .messagebox {
+      background-color: white;
+      width: 400px;
+      margin: auto;
+      color: black;
+      padding: 30px;
+      font-size: 20px;
+      line-height: 30px;
+      box-shadow: 0px 0px 10px 0px white;
+    }
+
+    .from {
+      text-align: right;
+      font-size: 20px;
+      margin-bottom: 0px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .letter-close {
+          display: block;
+          padding-top: 300px;
+      }
+
+    .letter-open {
+          display: none;
+    }
+
+    body {
+      background-color: rgb(15, 66, 15);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="snow"></div>
+  <div class="letter-close">
+    <div class="envelope"></div>
+    <h2 class="envelope-msg">OPEN</h2>
+  </div>
+  <div class="letter-open">
+  <div class="rtan" onclick="go_rtan()"></div>
+    <h1>
+      <font color="red">M</font>e<font color="red">r</font>r<font color="red">y</font> C<font color="red">h</font>r<font
+        color="red">i</font>s<font color="red">t</font>m<font color="red">a</font>s<font color="red">!</font>
+    </h1>
+    <div class="messagebox">
+      루돌프 사슴코는<br>
+      매우 반짝이는 코<br>
+      <br>
+      크리스마스는 빨간날<br>
+      해피 크리스마스😎<br>
+
+      <p class="from">from Santa.</p>
+    </div>
+  </div>
+  
+<!-- 
+  <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script> -->
+
+  <script src="./PureSnow.js"></script>
+
+  <script>
+    const letterClose = document.querySelector(".letter-close");
+    const letterOpen = document.querySelector(".letter-open");
+    letterClose.onclick = () => {
+      letterClose.style.display = "none";
+      letterOpen.style.display = "block";
+    };
+    function go_rtan() {
+      alert('앗, 어떻게 찾았지!');
+      window.location.href =
+        'https://i.pinimg.com/originals/70/83/7b/70837b3198ba6f46462f7295399da621.jpg';
+    }
+  </script>
+
+  
+
+
+</body>
+
+</html>
